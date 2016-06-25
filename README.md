@@ -4,9 +4,7 @@ For all the people who think borders would help to make anything better!
 ### About
 The lib  rewrites all links on a page that is hosted under the [.uk ccTLD](https://github.com/indus/brexit.js/blob/master/brexit.js#L42)  if they target another page with a [domain of one of EUs remaining member states](https://github.com/indus/brexit.js/blob/master/brexit.js#L14-L41) (or vice versa). Navigation from a rewriten link then takes a stopover at the [border control](https://brexit.js.org?to=https://github.com/indus/brexit.js) and is getting monitored with a grim look before beeing forwarded. 
 
-### DEMO (of the border control page)
-
-https://brexit.js.org?to=https://github.com/indus/brexit.js
+### DEMO (of the [border control page](https://brexit.js.org?to=https://github.com/indus/brexit.js))
 
 ![eu](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/europeanunion.png) __FOR EU CITIZENS__: https://brexit.js.org/uk/?to=https://www.gov.uk
 
