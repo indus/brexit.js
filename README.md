@@ -14,7 +14,7 @@ FOR BRITISH: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
 
 ## Installation & Usage
 
-Just add the script to you page and call the only function ```brexit``` (and don´t too much think about the consequences)
+Just add the script to you page and call its only function ```brexit()``` (and don´t think about the consequences too much)
 
 ```html
 <!-- load the brexit.js script library -->
