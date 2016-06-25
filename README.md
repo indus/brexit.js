@@ -5,11 +5,11 @@ For all the people who think borders would help to make anything better!
 The lib  rewrites all links on a page that is hosted under the .uk ccTLD if they target another page with a domain of one of EUs remaining member states (or vice versa). Any outbound traffic of this page then takes a stopover at the [border control](https://brexit.js?to=https://github.com/indus/brexit.js) and is getting monitored with a grim look before beeing forwarded. 
 
 ## DEMO
-https://brexit.js?to=https://github.com/indus/brexit.js
+https://brexit.js.org?to=https://github.com/indus/brexit.js
 
-FOR EU MEMBERS: https://brexit.js/uk/?to=https://www.gov.uk/
+FOR EU MEMBERS: https://brexit.js.org/uk/?to=https://www.gov.uk/
 
-FOR BRITISH: https://brexit.js/de/?to=https://github.com/indus/brexit.js
+FOR BRITISH: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
 
 
 ## Installation & Usage
