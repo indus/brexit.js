@@ -1,0 +1,11 @@
+# Site settings
+title: Brexit.JS
+description: For all the people who think borders would help to make anything better!
+url: "https://brexit.js.org"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
