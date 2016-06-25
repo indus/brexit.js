@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="refresh" content="11; url=https://github.com/indus/brexit.js">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+    <!--
+        CREDITS/LICENSES:
+
+        City silhouette:    Creative Commons (Attribution 3.0); Copyright © Free graphic resource for designer! All Rights Reserved.; http://freedesignfile.com
+        National flags:     MIT License (MIT); Copyright (c) 2013 Panayiotis Lipiridis; https://github.com/lipis/flag-icon-css
+        Police man:         Copyright (c) patrimonio; licensed on vectorstock.com; https://www.vectorstock.com/royalty-free-vector/traffic-policeman-hand-stop-sign-circle-retro-vector-5327174
+
+    -->
+
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #1d1d1d;
+        }
+
+        @-webkit-keyframes bg {
+            from {
+                background-size: 100% 100%;
+            }
+
+            to {
+                background-size: 100% 100%;
+            }
+        }
+
+        @keyframes bg {
+            from {
+                background-size: 100% 100%;
+            }
+
+            to {
+                background-size: 100% 100%;
+            }
+        }
+
+        #bg {
+            background: #163C52;
+            background-image: -webkit-linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%);
+            background-image: -webkit-linear-gradient(top, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%);
+            background-image: linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            -webkit-animation-name: bg;
+            animation-name: bg;
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes ctrl {
+            0% {
+                background-size: 100%, 100%, 100%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            20% {
+                background-size: 60%, 105%, 120%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            40% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            90% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,100%) scale(5);
+                transform: translate(-50%,100%) scale(5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes ctrl {
+            0% {
+                background-size: 100%, 100%, 100%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            20% {
+                background-size: 60%, 105%, 120%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            40% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+            }
+
+            90% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,-50%) scale(1);
+                transform: translate(-50%,-50%) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                background-size: 60%, 140%, 134%;
+                -webkit-transform: translate(-50%,100%) scale(5);
+                transform: translate(-50%,100%) scale(5);
+                opacity: 0;
+            }
+        }
+
+        #ctrl {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 80vmin;
+            height: 80vmin;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: translate(-50%,-50%) scale(1);
+            transform: translate(-50%,-50%) scale(1);
+            background: #C7BBB6;
+            box-shadow: 0 -5px 30px #000;
+            background-size: 100%, 100%, 100%;
+            background-repeat: no-repeat;
+            background-position: -100% bottom,right top,center top;
+            -webkit-animation-name: ctrl;
+            animation-name: ctrl;
+            -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="bg" src="{% if page.bg %}{{page.url}}bg{% else %}/bg{% endif %}.svg" />
+
+    <!--[if lt IE 9]><p  style="position:absolute;top:10%;left:25%;right:25%;color:#fff;font-family:Arial;text-align:center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <div id="ctrl" style="background-image:url(/ctrl_1.png),url(/ctrl_0.png),url({% if page.url != "/" %}{{page.url}}flag{% else %}/flag{% endif %}.svg)"></div>
+    <script>
+        (function (undefined) {
+            return;
+            var regex = new RegExp("[?&]to(=([^&#]*)|&|#|$)"), results = regex.exec(window.location.href), ato;
+            if (results && results[2]) {
+                setTimeout(function () {
+                    location.href = decodeURIComponent(results[2].replace(/\+/g, " "));
+                }, 10000)
+            }
+        })();
+    </script>
+
+    <a href="https://your-url" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:rgba(0,0,0,.2); color:#1d1d1d; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+
+        @keyframes octocat-wave {
+            0%,100% {
+                transform: rotate(0);
+            }
+
+            20%,60% {
+                transform: rotate(-25deg);
+            }
+
+            40%,80% {
+                transform: rotate(10deg);
+            }
+        }
+
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none;
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+        }
+    </style>
+    
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.js.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 4]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.js.org/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
