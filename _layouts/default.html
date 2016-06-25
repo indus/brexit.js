@@ -180,7 +180,6 @@
     <div id="ctrl" style="background-image:url(/ctrl_1.png),url(/ctrl_0.png),url({% if page.url != "/" %}{{page.url}}flag{% else %}/flag{% endif %}.svg)"></div>
     <script>
         (function (undefined) {
-            return;
             var regex = new RegExp("[?&]to(=([^&#]*)|&|#|$)"), results = regex.exec(window.location.href), ato;
             if (results && results[2]) {
                 setTimeout(function () {
