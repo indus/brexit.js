@@ -27,7 +27,7 @@ Just add the script to you page and call its only function ```brexit()``` (and d
   brexit();
 </script>
 ```
-you may want to call it again e.g. if DOM changed;
+*you may want to call it again e.g. if the DOM has changed; I also thought about a function to reverse the rewrite and restore the original state - but i think it thats pointless*
 
 ### CREDITS/LICENSES (assets on [website](https://github.com/indus/brexit.js/tree/gh-pages)):
 
