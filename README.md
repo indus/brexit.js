@@ -8,9 +8,9 @@ The lib  rewrites all links on a page that is hosted under the [.uk ccTLD](https
 
 https://brexit.js.org?to=https://github.com/indus/brexit.js
 
-__FOR EU CITIZENS__: https://brexit.js.org/uk/?to=https://www.gov.uk
+[[http://www.flags.net/images/smallflags/EUUN0001.GIF|alt=eu]] __FOR EU CITIZENS__: https://brexit.js.org/uk/?to=https://www.gov.uk
 
-__FOR BRITISH__: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
+[[http://www.flags.net/images/smallflags/UNKG0001.GIF|alt=uk]] __FOR BRITISH__: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
 
 ### Installation & Usage
 
