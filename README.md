@@ -40,8 +40,6 @@ Police man:         Copyright (c) patrimonio; licensed on vectorstock.com; https
 
 ## LICENSE (CODE and everything else)
 
-[MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2016 Stefan Keim (indus)
+[MIT](http://opensource.org/licenses/MIT) Copyright (c) 2016 Stefan Keim (indus)
 
 
