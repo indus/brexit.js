@@ -4,10 +4,11 @@ For all the people who think borders would help to make anything better!
 ### About
 The lib  rewrites all links on a page that is hosted under the [.uk ccTLD](https://github.com/indus/brexit.js/blob/master/brexit.js#L42)  if they target another page with a [domain of one of EUs remaining member states](https://github.com/indus/brexit.js/blob/master/brexit.js#L14-L41) (or vice versa). Navigation from a rewriten link then takes a stopover at the [border control](https://brexit.js.org?to=https://github.com/indus/brexit.js) and is getting monitored with a grim look before beeing forwarded. 
 
-### DEMO
+### DEMO (of the border control)
+
 https://brexit.js.org?to=https://github.com/indus/brexit.js
 
-FOR EU MEMBERS: https://brexit.js.org/uk/?to=https://www.gov.uk/
+FOR EU MEMBERS: https://brexit.js.org/uk/?to=https://www.gov.uk
 
 FOR BRITISH: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
 
@@ -19,13 +20,17 @@ Just add the script to you page and call its only function ```brexit()``` (and d
 <!-- load the brexit.js script library -->
 <script src="brexit.js"></script>
 
-//...
-
 <!-- use the library -->
 <script>
   brexit();
 </script>
 ```
+
+```html
+<!-- before --> <a href="https://www.gov.uk">GOV</a> 
+<!-- after  --> <a href="https://brexit.js.org/uk/?to=https://www.gov.uk">GOV</a> 
+```
+
 *you may want to call it again e.g. if the DOM has changed; I also thought about a function to reverse the rewrite and restore the original state - but i think it thats pointless*
 
 there are customized pages for the follwing country codes and ccTLDs:
