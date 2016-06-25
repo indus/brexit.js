@@ -31,7 +31,7 @@ Just add the script to you page and call its only function ```brexit()``` (and d
 <!-- after  --> <a href="https://brexit.js.org/uk/?to=https://www.gov.uk">GOV</a> 
 ```
 
-*Feel free to call ```brexit``` again e.g. if the DOM has changed and new links need to be handled; I also thought about a function to reverse the BREXIT and to restore the original state - but I think that is pointless*
+*Feel free to call ```brexit``` again e.g. if the DOM has changed and new links need to be handled; I also thought about a function to reverse the BREXIT and to restore the original state - but I think that would be even more pointless...*
 
 There are customized pages for the follwing country codes and ccTLDs:
 [eu](https://brexit.js.org/eu/?to=https://github.com/indus/brexit.js),
