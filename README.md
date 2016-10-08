@@ -8,7 +8,7 @@ The lib  rewrites all links on a page that is hosted under the [.uk ccTLD](https
 
 ![eu](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/europeanunion.png) __FOR EU CITIZENS__: https://brexit.js.org/uk/?to=https://www.gov.uk
 
-![uk](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/gb.png) __FOR BRITISH__: https://brexit.js.org/eu/?to=http://europa.eu/index_en.htm
+![uk](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/gb.png) __FOR BRITISH__: https://brexit.js.org/eu/?to=http://europa.eu/european-union/index_en
 
 ### Installation & Usage
 
